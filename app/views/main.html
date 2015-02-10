@@ -1,0 +1,87 @@
+<div class="titleRow">
+  <h3 id="mainTitle"  class="col-lg-6 col-lg-offset-3">Where do you want to find a place to call home?</h3>
+</div>
+
+<div class="cityContainer">
+
+  <div class="cityRow">
+    <div class="city-block col-lg-6 col-lg">
+      <a href="#/city/bellevue" class="imageHolder">
+        <!--<img class="cityImage" src="images/Bellevue.jpg"/>-->
+        <h2 class="image-Text">Bellevue</h2></a>
+      </div>
+
+      <div class="city-block col-lg-6">
+        <a href="#/city/kirkland" class="textHolder">
+          <!--<img class="cityImage" src="images/Kirkland.jpg"/>-->
+          <h2 class="image-Text">Kirkland</h2></a>
+
+      </div>
+    </div>
+
+  <div class="cityRow">
+    <div class="city-block col-lg-6">
+      <a href="#/city/olympia" class="imageHolder">
+      <!--<img class="cityImage" src="images/Olympia.jpg"/>-->
+      <h2 class="imageText">Olympia</h2></a>
+
+    </div>
+    <div class="city-block col-lg-6">
+      <a href="#/city/redmond" class="imageHolder">
+        <!--<img class="cityImage" src="images/Redmond.jpg"/>-->
+        <h2 class="imageText">Redomond</h2> </a>
+
+    </div>
+    </div>
+
+    <div class="cityRow">
+      <div class="city-block col-lg-6">
+        <a href="#/city/seattle" class="imageHolder">
+          <!--<img class="cityImage" src="images/Seattle.jpg"/>-->
+          <h2 class="imageText">Seattle</h2></a>
+     </div>
+
+      <div class="city-block col-lg-6">
+        <a href="#/city/tacoma" class="imageHolder">
+          <!--<img class="cityImage" src="images/Tacoma.jpg"/>-->
+          <h2 class="imageText">Tacoma</h2></a>
+      </div>
+    </div>
+
+      <div class="cityRow col-lg-6">
+        <h2>NG REPEAT POWER</h2>
+        <div ng-app ng-controller="MyCityCtrl">
+          <ul>
+            <li ng-repeat="(city. image) in items">{{city}}: {{image}}</li>
+          </ul>
+        </div>
+
+      </div>
+</div>
+
+
+
+
+
+<!-- YEOMAN Default html
+<div class="container">
+  <h2>My todos</h2>
+
+  Todos input
+  <form role="form" ng-submit="addTodo()">
+    <div class="row">
+      <div class="input-group">
+        <input type="text" ng-model="todo" placeholder="What needs to be done?" class="form-control">
+        <span class="input-group-btn">
+          <input type="submit" class="btn btn-primary" value="AddAndForget">
+        </span>
+      </div>
+    </div>
+
+    Todos list
+    <p class="form-group" ng-repeat="todo in todos">
+      <input type="text" ng-model="todo" class="form-control">
+    </p>
+  </form>
+</div>
+-->
